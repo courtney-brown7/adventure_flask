@@ -1,8 +1,14 @@
 from route_helper import simple_route
 
-GAME_HEADER = """
-<h1>Welcome to adventure quest!</h1>
-<p>At any time you can <a href='/reset/'>reset</a> your game.</p>
+WELCOME_HEADER = """
+
+<style>
+
+</style>
+
+<h1>Welcome to the World of Dance!</h1>
+<body background="https://mapofeurope.com/wp-content/uploads/2013/11/world-map.jpg">
+<p>You can explore dance on any continent <a href='/reset/'>reset</a> your game.</p>
 """
 
 
@@ -14,7 +20,7 @@ def hello(world: dict) -> str:
     :param world: The current world
     :return: The HTML to show the player
     """
-    return GAME_HEADER+"""You are in the Lair of the Corgis.<br>
+    return WELCOME_HEADER+"""Where would you like to go?<br>
     
     <a href="goto/lair">Go further into the lair.</a><br>
     <a href="goto/entrance">Retreat.</a>"""
